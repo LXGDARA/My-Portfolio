@@ -1,0 +1,36 @@
+public class ExceptionExamples4 {
+
+	public static void main(String[] args) {
+		JobType4 manager = new JobType4("Manager", 6);
+		Person4 employee = new Person4("Bob Little", 47, manager);
+		printPerson(employee);
+	}
+
+	public static void printPerson(Person4 myPerson) {
+		System.out.println(myPerson.name + " is " + myPerson.age +
+			" years old and works as a " + myPerson.job.jobName);
+	}
+}
+
+class Person4 {
+	String name;
+	int age;
+	JobType4 job;
+
+	Person4(String name, int age, JobType4 job) {
+		
+		this.name = name;
+		this.age = age;
+		this.job = job;
+	}
+}
+
+class JobType4 {
+	String jobName;
+	int salaryBand;
+	
+	JobType4(String name, int band) {
+		jobName = name;
+		salaryBand = band;
+	}
+}

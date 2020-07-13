@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;performers.Slime&apos; to &apos;Boar&apos;&#x0D;&#x0A;- Original project: &apos;GameAppProject&apos;&#x0D;&#x0A;- Original element: &apos;performers.Slime&apos;&#x0D;&#x0A;- Renamed element: &apos;performers.Boar&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Slime&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;performers{Slime.java[Slime" matchStrategy="1" name="Boar" qualified="false" references="true" similarDeclarations="false" stamp="1562022831474" textual="false" version="1.0"/>
+</session>

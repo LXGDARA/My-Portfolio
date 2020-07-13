@@ -1,0 +1,24 @@
+public class ErrorsRemovedSyntaxErrors {
+	
+	public static void main(String[] args) {
+		int age = 30;
+		int retirementFund = 10000;
+		int yearsInRetirement = 20;
+		String name = "David Johnson";
+		recalculate(100, 0.1);
+		for (int i = age; i <= 65; i++){
+			recalculate(retirementFund, 0.1);
+			
+		}
+		int monthlyPension = retirementFund/yearsInRetirement/12;
+		System.out.println(name + " will have $" + monthlyPension
+				+ " per month for retirement.");
+		recalculate(100, 0.1);
+		System.out.println(name + " will have $" + monthlyPension + "per month for retirement");
+	}
+
+	public static double recalculate(double fundAmount, double rate){
+		fundAmount = fundAmount*(1+rate);
+		return fundAmount;
+	}
+}
