@@ -1,0 +1,27 @@
+public class ExceptionExamples3 {
+
+	public static void main(String[] args) {
+		Person3 employee = new Person3();
+		printPerson(employee);
+	}
+
+	public static void printPerson(Person3 myPerson){
+		System.out.println(myPerson.name + " is " + myPerson.age +
+			" years old and works as a " + myPerson.job.jobName);
+	}
+}
+
+class Person3 {
+	String name;
+	int age;
+	JobType job = new Jobtype();
+
+	Person3() {}
+}
+
+class JobType {
+	String jobName;
+	int salaryBand;
+
+	JobType() {}
+}
